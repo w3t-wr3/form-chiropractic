@@ -10,7 +10,8 @@
     "**/*.css",
     "**/*.js",
     "images/**/*",
-    "fonts/**/*"
+    "fonts/**/*",
+    "libraries/**/*"
   ],
   "exclude": [
     "node_modules/**",
