@@ -1,0 +1,5 @@
+# Bolt/Wetware Studio ignore file
+node_modules/
+.git/
+.DS_Store
+*.log
