@@ -1,0 +1,20 @@
+{
+  "projectType": "static",
+  "framework": "html",
+  "entryPoint": "index.html",
+  "buildCommand": "",
+  "startCommand": "npx --yes serve -p 3000",
+  "environmentVariables": {},
+  "include": [
+    "**/*.html",
+    "**/*.css",
+    "**/*.js",
+    "images/**/*",
+    "fonts/**/*"
+  ],
+  "exclude": [
+    "node_modules/**",
+    ".git/**",
+    ".DS_Store"
+  ]
+}
