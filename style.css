@@ -37,7 +37,7 @@
 
 body {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 14px;
+	font-size: 17.5px;
 	color: #000;
 	overflow-x: hidden;
 }
@@ -178,6 +178,7 @@ ul {
     transition: all 1s ease 0s;
 }
 .top-header {
+	display: none;
 	background-color: #f0f2f4;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.13);
 	padding-bottom: 10px;
@@ -189,7 +190,7 @@ ul {
 	line-height: 30px;
 }
 .top-header .col-md-6:last-child > a {
-	background-color: #33a9ee;
+	background-color: #2B7FB8;
 	color: #fff;
 	padding: 10px 30px 10px 47px;
 	font-weight: 900;
@@ -209,7 +210,7 @@ ul {
 	top: 10px;
 }
 .top-header .col-md-6:last-child > a:hover {
-	background-color: #0879bf;
+	background-color: #1F6FA5;
 }
 .top-header ul li {
 	margin: 0 16px;
@@ -227,6 +228,8 @@ ul {
 	padding: 2px 0;
 	background-image: none;
 	background-repeat: repeat-x;
+	transform: scale(0.85);
+	transform-origin: center;
 }
 .middle-header .row {
 	display: flex;
@@ -257,6 +260,11 @@ ul {
 .middle-header .phone p {
 	color: #5a5c5d;
 	margin-bottom: 0;
+}
+
+.logo-block img {
+	transform: scale(1.3);
+	transform-origin: left center;
 }
 
 /* ## Footer */
@@ -293,7 +301,7 @@ ul {
 }
 .contact-details .detail-box {
 	padding: 30px 15px 30px 97px;
-	background-color: #33a9ee;
+	background-color: #0f89d1;
 }
 .contact-details .detail-box,
 .contact-details .detail-box a { 
@@ -305,9 +313,9 @@ ul {
 	position: absolute;
 	left: 0;
 	line-height: 60px;
-	background-color: #2098df;
+	background-color: #0f89d1;
 	text-align: center;
-	border-bottom: 1px solid #2098df;
+	border-bottom: 1px solid #0f89d1;
 }
 .contact-details .detail-box h4 { 
 	font-size: 13px;
@@ -323,7 +331,7 @@ ul {
 	line-height: 20px;
 }
 .contact-details .detail-box.phone-box {
-	background-color: #2098df;
+	background-color: #0f89d1;
 }
 .contact-details .detail-box.phone-box i {
 	background-color: #0f89d1;
@@ -386,7 +394,7 @@ ul {
 	left: 0;
 	bottom: 0;
 	position: absolute;
-	background-color: #33a9ee;
+	background-color: #0f89d1;
 }
 
 /* -- Widget Links */
@@ -603,8 +611,16 @@ ul {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: -2px;
 	z-index: 1;
+}
+
+@media (min-width: 992px) {
+	.banner-shape {
+		max-height: 260px;
+		height: 260px;
+		bottom: -3px;
+	}
 }
 .shape-left {
 	position: absolute;
@@ -681,7 +697,7 @@ ul {
 	right: 0;
 	bottom: 0;
 	overflow: hidden;
-	background-color: #33a9ee;
+	background-color: #0f89d1;
 }
 .right-shape-blue {
 	overflow: hidden;
@@ -709,7 +725,7 @@ ul {
 	background-position: right bottom;
 }
 .departments-banner .left-shape {
-	background-color: #33a9ee;
+	background-color: #0f89d1;
 }
 .departments-banner .right-shape {
 	background-color: #fafafa;

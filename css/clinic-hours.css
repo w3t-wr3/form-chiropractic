@@ -1,0 +1,53 @@
+/* Clean Clinic Hours Styling */
+
+/* ============================================
+   LINK DISABLE SWITCH
+   ============================================
+   To DISABLE all links on homepage: Keep this section uncommented (as is)
+   To ENABLE all links on homepage: Comment out or delete the section below
+   ============================================ */
+
+a {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* ============================================
+   END LINK DISABLE SWITCH
+   ============================================ */
+
+.clinic-hours-clean .hours-grid {
+    margin-top: 20px;
+}
+
+.clinic-hours-clean .hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.clinic-hours-clean .hours-row:last-child {
+    border-bottom: none;
+}
+
+.opening-hours .clinic-hours-clean .day {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f89d1 !important;
+    letter-spacing: 0.5px;
+}
+
+.opening-hours .clinic-hours-clean .time {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0f89d1 !important;
+    text-align: right;
+    line-height: 1.4;
+}
+
+/* Hide the old ul style if it exists */
+.clinic-hours-clean ul {
+    display: none;
+}

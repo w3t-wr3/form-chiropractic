@@ -57,26 +57,13 @@
 	}
 
 	/* ## Document Scroll - Window Scroll */
-	$( document ).scroll(function()
+	$(document).scroll(function()
 	{
-		var scroll	=	$(window).scrollTop();
-		var height	=	$(window).height();
+		var scroll = $(window).scrollTop();
 
-		/*** set sticky menu ***/
-		if( scroll >= height )
-		{
-			$('.ow-navigation').addClass("navbar-fixed-top animated fadeInDown").delay( 2000 ).fadeIn();
-		}
-		else if ( scroll <= height )
-		{
-			$('.ow-navigation').removeClass("navbar-fixed-top animated fadeInDown");
-		}
-		else
-		{
-			$('.ow-navigation').removeClass("navbar-fixed-top animated fadeInDown");
-		} // set sticky menu - end		
+		/*** sticky menu now handled by CSS position: sticky ***/
 
-		if ($(this).scrollTop() >= 50)
+		if (scroll >= 50)
 		{
 			// If page is scrolled more than 50px
 			$('#back-to-top').fadeIn(200);    // Fade in the arrow
@@ -91,22 +78,7 @@
 	$(document).ready(function($) {
 
 		/* - Scrolling Navigation */
-		var scroll	=	$(window).scrollTop();
-		var height	=	$(window).height();		
-		
-		/*** set sticky menu ***/
-		if( scroll >= height -500 )
-		{
-			$('.ow-navigation').addClass("navbar-fixed-top").delay( 2000 ).fadeIn();
-		}
-		else if ( scroll <= height )
-		{
-			$('.ow-navigation').removeClass("navbar-fixed-top");
-		}
-		else
-		{
-			$('.ow-navigation').removeClass("navbar-fixed-top");
-		} // set sticky menu - end
+		/*** sticky menu now handled by CSS position: sticky ***/
 		
 		/* local url of page (minus any hash, but including any potential query string) */
 		var url = location.href.replace(/#.*/,'');
